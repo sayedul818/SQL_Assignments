@@ -14,7 +14,7 @@ CREATE TABLE species (
     discovery_date DATE,
     conservation_status VARCHAR(50)
 );
-
+-- 2. sightings Table
 CREATE TABLE sightings(
     sighting_id SERIAL PRIMARY KEY,
     species_id INT REFERENCES species(species_id),
